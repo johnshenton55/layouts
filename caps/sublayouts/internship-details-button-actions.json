@@ -1,0 +1,113 @@
+
+{
+  "Grid": {
+    "rows": 5,
+    "cols": 1,
+    "children": [
+      {
+        "GennyButton": {
+          "position": [0, 0],
+          "style": {
+            "width": "150px",
+            "height": "40px",
+            "marginBottom": "15px"
+          },
+          "buttonStyle": {
+            "background": "PROJECT.PRI_COLOR",
+            "color": "white"
+          },
+          "buttonCode": "BTN_APPLY_INTERNSHIP",
+          "value": {
+            "itemCode": "BE.code",
+            "root": "ROOT"
+          },
+          "children": "APPLY"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [1, 0],
+          "style": {
+            "width": "150px",
+            "height": "40px",
+            "marginBottom": "15px"
+          },
+          "buttonStyle": {
+            "color": "PROJECT.PRI_COLOR",
+            "background": "white",
+            "border": "1px solid teal"
+          },
+          "buttonCode": "BTN_APPLY_INTERNSHIP",
+          "value": {
+            "itemCode": "BE.code",
+            "root": "ROOT"
+          },
+          "children": "Shortlist this job"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [2, 0],
+          "style": {
+            "width": "150px",
+            "height": "40px",
+            "marginBottom": "15px"
+          },
+          "buttonStyle": {
+            "color": "PROJECT.PRI_COLOR",
+            "background": "white",
+            "border": "1px solid teal"
+          },
+          "buttonCode": "BTN_APPLY_INTERNSHIP",
+          "value": {
+            "itemCode": "BE.code",
+            "root": "ROOT"
+          },
+          "children": "Email this job"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [3, 0],
+          "style": {
+            "width": "150px",
+            "height": "40px",
+            "marginBottom": "15px"
+          },
+           "buttonStyle": {
+            "color": "PROJECT.PRI_COLOR",
+            "background": "white",
+            "border": "1px solid teal"
+          },
+          "buttonCode": "BTN_APPLY_INTERNSHIP",
+          "value": {
+            "itemCode": "BE.code",
+            "root": "ROOT"
+          },
+          "children": "Share this job"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [4, 0],
+          "style": {
+            "width": "150px",
+            "height": "40px",
+            "marginBottom": "15px"
+          },
+           "buttonStyle": {
+            "color": "PROJECT.PRI_COLOR",
+            "background": "white",
+            "border": "1px solid teal"
+          },
+          "buttonCode": "BTN_APPLY_INTERNSHIP",
+          "value": {
+            "itemCode": "BE.code",
+            "root": "ROOT"
+          },
+          "children": "More jobs by the advertiser"
+        }
+      }
+    ]
+  }
+}

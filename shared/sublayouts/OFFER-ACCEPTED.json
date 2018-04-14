@@ -1,0 +1,46 @@
+{
+    "Grid": {
+        "rows": 3,
+        "cols": [1,4],
+        "className": "bucket-card",
+        "children": [
+            {
+                "ImageView": {
+                    "position": [0,0],
+                    "rounded": true,
+                    "style": {
+                        "width": "20px"
+                    },
+                    "src": "BE.PRI_IMAGE_URL"
+                }
+            },
+            {
+                "span": {
+                    "position": [0,1],
+                    "style": {
+                        "fontSize": "0.8em"
+                    },
+                    "children": "OFFER"
+                }
+            },
+            {
+                "span": {
+                    "position": [1,1],
+                    "style": {
+                        "fontSize": "0.75em"
+                    },
+                    "children": "BE.PRI_OFFER_PRICE"
+                }
+            },
+            {
+                "span": {
+                    "position": [2,1],
+                    "style": {
+                        "fontSize": "0.75em"
+                    },
+                    "children": "BE.PRI_OFFER_MESSAGE"
+                }
+            }
+        ]
+    }
+}

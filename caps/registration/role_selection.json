@@ -1,0 +1,56 @@
+{
+  "Grid": {
+    "rows": 3,
+    "cols": 3,
+    "children": [
+      {
+        "h2": {
+          "position": [0, 1],
+          "children": "Select your role"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [1, 1],
+          "buttonCode": "BTN_SELECT_ROLE_INTERN",
+          "value": {},
+          "style": {
+            "margin": "10px"
+          },
+          "buttonStyle": {
+            "background": "PROJECT.PRI_COLOR"
+          },
+          "children": "I am an Intern"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [1, 1],
+          "buttonCode": "BTN_SELECT_ROLE_EDU_PROVIDER",
+          "value": {},
+          "style": {
+            "margin": "10px"
+          },
+          "buttonStyle": {
+            "background": "PROJECT.PRI_COLOR"
+          },
+          "children": "I am an Education Provider"
+        }
+      },
+      {
+        "GennyButton": {
+          "position": [1, 1],
+          "buttonCode": "BTN_SELECT_ROLE_HOST_COMPANY",
+          "value": {},
+          "style": {
+            "margin": "10px"
+          },
+          "buttonStyle": {
+            "background": "PROJECT.PRI_COLOR"
+          },
+          "children": "I am a Host Company"
+        }
+      }
+    ]
+  }
+}

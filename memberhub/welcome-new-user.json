@@ -1,0 +1,34 @@
+{
+
+"Grid": {
+  "cols": [
+    {
+      "style" : {
+        "width": "100%"
+      }
+    }
+  ],
+  "rows": ["50px", 5],
+  "children": [
+   {
+      "h2": {
+        "children": "Please complete to proceed.",
+        "position": [0, 0],
+        "style": {
+          "textAlign": "center",
+          "wordWrap": "break-word"
+        }
+      }
+   },
+   {
+     "GennyForm": {
+        "style": {
+           "overflowY": "visible"
+        },
+        "root": "QUE_NEW_USER_PROFILE_GRP",
+        "position": [1, 0]
+     }
+   }
+  ]
+}
+}

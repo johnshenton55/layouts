@@ -1,0 +1,122 @@
+{
+    "div": {
+        "children": [
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_OWNER"],
+                    "showValues": ["true"],
+                    "children":[
+                        {
+                            "Selector":{
+                                "checkValues":["ROOT"],
+                                "hideValues":["GRP_IN_TRANSIT"],
+                                "children":[
+                                    {
+                                        "MapDisplay":{
+                                           "style":{
+                                                    "height":"400px",
+                                                    "marginTop":"10px"
+                                                },
+                                            "routes":[
+                                                {
+                                                    "origin":"BE.PRI_PICKUP_ADDRESS_FULL",
+                                                    "dest":"BE.PRI_DROPOFF_ADDRESS_FULL"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Selector":{
+                                "checkValues":["ROOT"],
+                                "showValues":["GRP_IN_TRANSIT"],
+                                "children":[
+                                    {
+                                        "MapDisplay":{
+                                           "style":{
+                                                    "height":"400px",
+                                                    "marginTop":"10px"
+                                            },
+                                             "routes":[
+                                                {
+                                                    "origin":"BE.PRI_PICKUP_ADDRESS_FULL",
+                                                    "dest":"BE.PRI_DROPOFF_ADDRESS_FULL"
+                                                }
+                                            ],
+                                            "markers":[
+                                                {
+                                                    "lat":"BE.PRI_POSITION_LATITUDE",
+                                                    "lng":"BE.PRI_POSITION_LONGITUDE"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_DRIVER"],
+                    "showValues": ["true"],
+                    "children":[
+                        {
+                            "Selector":{
+                                "checkValues":["ROOT"],
+                                "hideValues":["GRP_NEW_ITEMS", "GRP_APPROVED"],
+                                "children":[
+                                    {
+                                        "MapDisplay":{
+                                            "style":{
+                                                    "height":"400px",
+                                                    "marginTop":"10px"
+                                            },
+                                            "routes":[
+                                                {
+                                                    "origin":"BE.PRI_PICKUP_ADDRESS_FULL",
+                                                    "dest":"BE.PRI_DROPOFF_ADDRESS_FULL"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Selector":{
+                                "checkValues":["ROOT"],
+                                "showValues":["GRP_NEW_ITEMS", "GRP_APPROVED"],
+                                "children":[
+                                    {
+                                        "MapDisplay":{
+                                            "style":{
+                                                    "height":"400px",
+                                                    "marginTop":"10px"
+                                            },
+                                            "routes":[
+                                                {
+                                                    "origin": {
+                                                        "suburb" : "BE.PRI_PICKUP_ADDRESS_SUBURB",
+                                                        "state" : "BE.PRI_PICKUP_ADDRESS_STATE"
+                                                    },
+                                                    "dest": {
+                                                        "suburb" : "BE.PRI_DROPOFF_ADDRESS_SUBURB",
+                                                        "state" : "BE.PRI_DROPOFF_ADDRESS_STATE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

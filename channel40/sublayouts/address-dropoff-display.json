@@ -1,0 +1,72 @@
+{
+    "div":{
+        "style":{
+            "display":"flex",
+            "alignItems":"center"
+        },
+        "children":[
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_OWNER"],
+                    "showValues": ["true"],
+                    "children":[
+                        {
+                            "GennyAddressLabel":{
+                                "style":{
+                                    "fontSize":"0.75em"
+                                },
+                                "attributePrefix": "PRI_DROPOFF_ADDRESS",
+                                "root":"BE.code"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_DRIVER"],
+                    "showValues": ["true"],
+                    "children":[
+                        {
+                            "Selector":{
+                                "checkValues":["ROOT"],
+                                "hideValues":["GRP_NEW_ITEMS"],
+                                "children":[
+                                    {
+                                        "GennyAddressLabel":{
+                                            "style":{
+                                                "fontSize":"0.75em"
+                                            },
+                                            "attributePrefix": "PRI_DROPOFF_ADDRESS",
+                                            "root":"BE.code"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Selector":{
+                                "checkValues":["ROOT"],
+                                "showValues":["GRP_NEW_ITEMS"],
+                                "children":[
+                                    {
+                                        "GennyAddressLabel":{
+                                            "style":{
+                                                "fontSize":"0.75em"
+                                            },
+                                            "attributePrefix": "PRI_DROPOFF_ADDRESS",
+                                            "root":"BE.code",
+                                            "hideStreetAddress": true,
+                                            "hidePostcode": true,
+                                            "hideCountry": true
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

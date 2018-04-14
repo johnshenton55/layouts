@@ -1,0 +1,121 @@
+{
+    "Grid": {
+        "rows": 1,
+        "cols": [
+            {
+                "style": {
+                    "flex": "0 0 50px",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "paddingRight": "5px",
+                    "height": ""
+                }
+            },
+            2,
+            {
+                "style": {
+                    "flex": "0 0 50px",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "justifyContent": "flex-end",
+                    "paddingRight": "5px"
+                }
+            }
+        ],
+        "className": "bucket-card",
+        "children": [
+            {
+                "ProfileImageView": {
+                    "position": [0,0],
+                    "style": {
+                        "width": "100%"
+                    },
+                    "src": "BE.PRI_IMAGE_URL",
+                    "isOnline": "BE.PRI_ONLINE"
+                }
+            },
+            {
+                "Grid": {
+                    "position": [0, 1],
+                    "rows": 2,
+                    "cols": 1,
+                    "children": [
+                        {
+                            "span": {
+                                "position": [0, 0],
+                                "style": {
+                                    "fontSize": "0.8em"
+                                },
+                                "children": "OWNER"
+                            }
+                        },
+                        {
+                            "span": {
+                                "position": [1, 0],
+                                "style": {
+                                    "fontSize": "0.75em"
+                                },
+                                "children": "BE.PRI_FIRSTNAME"
+                            }
+                        },
+                        {
+                            "span": {
+                                "position": [1, 0],
+                                "style": {
+                                    "fontSize": "0.75em"
+                                },
+                                "children": " "
+                            }
+                        },
+                        {
+                            "span": {
+                                "position": [1, 0],
+                                "style": {
+                                    "fontSize": "0.75em"
+                                },
+                                "children": "BE.PRI_LASTNAME"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "GennyButton": {
+                   "position": [0, 2],
+                    "style": {
+                          "display": "flex",
+                          "alignItems": "center",
+                          "justifyContent": "center",
+                          "paddingRight": "10px"
+                    },
+                    "buttonStyle": {
+                           "background": "none"
+                    },
+                    "buttonCode": "BTN_CREATE_CONVERSATION",
+                    "value": {
+                        "itemCode": "BE.code",
+                        "hint": "ROOT"
+                    },
+                    "children": [
+                        {
+                            "IconSmall": {
+                                "name": "message"
+                            }
+                        }
+                    ]
+                 }
+            },
+            {
+                "ContactButton": {
+                    "position": [0,2],
+                    "style": {
+                          "display": "flex",
+                          "alignItems": "center",
+                          "justifyContent": "center"
+                    },
+                    "link": "BE.PRI_MOBILE"
+                 }
+            }             
+        ]
+    }
+}

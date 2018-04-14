@@ -1,0 +1,42 @@
+{
+  "Grid": {
+    "rows": [ { "style": { "flexGrow": 0, "height": "200px"} }, 1, 1 ],
+    "cols": [
+        {
+            "style": {
+                "flexGrow": 1,
+                "width": "100%"
+            }
+        }
+    ],
+    "children": [
+      {
+        "ProfileImageView": {
+          "position": [0, 0],
+          "src": "BE.PRI_IMAGE_URL",
+          "isOnline":"BE.PRI_ONLINE",
+          "style": {
+            "margin": "0 auto",
+            "width": "150px"
+          },
+          "caption": "BE.PRI_FIRSTNAME"
+        }
+      },
+      {
+        "GennyForm": {
+          "position": [1, 0],
+          "root": "QUE_USER_RATING_GRP"
+        }
+      },
+      {
+        "p": {
+          "style": {
+            "marginTop": "10px"
+          },
+          "position": [2, 0],
+          "children": "Payment has been released to the driver. Please rate the driver based on their performance during the job."
+        }
+      }
+    ]
+  }
+}

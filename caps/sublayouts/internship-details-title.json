@@ -1,0 +1,70 @@
+{
+  "Grid": {
+    "cols": [0.6, 2],
+    "rows": [
+      {
+        "style": {
+          "flexGrow": 1,
+          "flexWrap": "nowrap"
+        }
+      }
+    ],
+    "style": {
+      "padding": "50px",
+      "paddingLeft": "0px"
+    },
+    "children": [
+      {
+        "ImageView": {
+          "position": [0, 0],
+          "src": "https://seeklogo.com/images/X/xero-logo-0DE623D530-seeklogo.com.png",
+          "style": {
+            "maxWidth": "75px",
+            "minWidth": "50px"
+          }
+        }
+      },
+      {
+        "Grid": {
+        "position": [0, 1],
+        "cols": 1,
+        "rows": 3,
+        "children": [
+          {
+            "h2": {
+              "position": [0, 0],
+              "children": "BE.PRI_TITLE",
+              "style": {
+                "margin": "0px",
+                "fontFamily": "Akkurat",
+                "fontWeight": "400",
+                "fontSize": "29px",
+                "color": "rgb(72,84,98)"
+              }
+            }
+          },
+          {
+            "h4": {
+              "position": [1, 0],
+              "children": "BE.links.COMPANY.PRI_TITLE",
+              "style": {
+                "margin": "0px",
+                "color": "PROJECT.PRI_COLOR"
+              }
+            }
+          },
+          {
+            "DateLabel": {
+              "position": [2, 0],
+              "children": "BE.created",
+              "style": {
+                "margin": "0px"
+              }
+            }
+          }
+        ]
+      }
+      }
+    ]
+  }
+}

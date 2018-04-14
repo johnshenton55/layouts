@@ -1,0 +1,58 @@
+{
+  "Grid": {
+    "rows": 3,
+    "cols": 1,
+    "children": [
+      {
+        "h1": {
+          "position": [0, 0],
+          "style": {
+            "textAlign": "center",
+            "paddingTop": "80px"
+          },
+          "children": "Welcome to MentorMatch. Please select your role."
+        }
+      },
+      {
+        "Grid": {
+          "position": [1, 0],
+          "rows": 1,
+          "cols": 2,
+          "style": {
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "GennyButton": {
+                "position": [0, 0],
+                "buttonCode": "BTN_SELECT_ROLE",
+                "value": {
+                 "itemCode": "MENTOR" 
+                },
+                "style": {
+                  "width": "300px",
+                  "padding": "50px"
+                },
+                "children": "I am a mentor"
+              }
+            },
+            {
+              "GennyButton": {
+                "position": [0, 1],
+                "buttonCode": "BTN_SELECT_ROLE",
+                "value": {
+                 "itemCode": "MENTEE" 
+                },
+                "style": {
+                  "width": "300px",
+                  "padding": "50px"
+                },
+                "children": "I am a mentee"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

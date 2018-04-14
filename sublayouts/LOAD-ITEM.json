@@ -1,0 +1,55 @@
+{
+    "Grid": {
+        "rows": 1,
+        "cols": [1, 4],
+        "className": "bucket-card",
+        "children": [
+            {
+                "ImageView": {
+                    "position": [0,0],
+                    "rounded": true,
+                    "style": {
+                        "width": "20px"
+                    },
+                    "src": "BE.PRI_IMAGE_URL"
+                }
+            },
+            {
+                "Grid": {
+                    "cols": 1,
+                    "rows": 3,
+                    "position": [0, 1],
+                    "children": [
+                        {
+                            "span": {
+                                "position": [0, 0],
+                                "style": {
+                                    "fontSize": "0.8em"
+                                },
+                                "children": "LOAD ITEM"
+                            }
+                        },
+                        {
+                            "span": {
+                                "position": [1, 0],
+                                "style": {
+                                    "fontSize": "0.75em"
+                                },
+                                "children": "BE.PRI_DESCRIPTION"
+                            }
+                        },
+                        {
+                            "span": {
+                                "position": [2, 0],
+                                "style": {
+                                    "fontSize": "0.75em"
+                                },
+                                "children": "BE.PRI_LOAD_TYPE"
+                            }
+                        }
+                   ]
+                }
+            }
+        ]
+    }
+}

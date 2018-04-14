@@ -1,0 +1,57 @@
+{
+  "Grid": {
+    "rows": 2,
+    "cols": 1,
+    "style": {
+      "alignItems": "center",
+      "justifyItems": "center"
+    },
+    "children": [
+      {
+        "h1": {
+          "position": [0, 0],
+          "style": {
+            "textAlign": "center"
+          },
+          "children": "Are you a company?"
+        }
+      },
+      {
+        "Grid": {
+          "rows": 1,
+          "cols": 2,
+          "position": [1, 0],
+          "children": [
+            {
+              "GennyButton": {
+                "position": [0, 0],
+                "style": {
+                  "paddingRight": "25px",
+                  "width": "200px"
+                },
+                "buttonStyle": {
+                  "background": "green"
+                },
+                "buttonCode": "BTN_ASK_IF_COMPANY",
+                "value": "YES",
+                "children": "YES"
+              }
+            },
+            {
+              "GennyButton": {
+                "position": [0, 1],
+                "style": {
+                  "paddingLeft": "25px",
+                  "width": "200px"
+                },
+                "buttonCode": "BTN_ASK_IF_COMPANY",
+                "value": "NO",
+                "children": "NO"
+              }
+            }
+          ]
+        }
+      }
+    ]
+   }
+}

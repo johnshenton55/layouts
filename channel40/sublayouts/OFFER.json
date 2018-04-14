@@ -1,0 +1,412 @@
+{
+    "Grid":{
+        "rows":1,
+        "cols":[
+            {
+                "style": {
+                    "flexGrow":1
+                }
+            },
+            {
+                "style": {
+                    "flexGrow":2
+                }
+            }
+        ],
+        "className":"bucket-card",
+        "style": {
+            "padding": "5px 10px"
+        },
+        "children":[
+            {
+                "Grid":{
+                    "position":[0,0],
+                    "rows":1,
+                    "cols":[
+                        {
+                            "style":{
+                                "flex":"0 0 40px",
+                                "display":"flex",
+                                "alignItems":"center"
+                            }
+                        },
+                        1
+                    ],
+                    "children":[
+                        {
+                            "ProfileImageView":{
+                                "position":[0,0],
+                                "isOnline":"BE.PRI_ONLINE",
+                                "style":{
+                                    "width":"100%",
+                                    "marginRight":"5px"
+                                },
+                                "src":"BE.links.CREATOR.PRI_IMAGE_URL"
+                            }
+                        },
+                        {
+                            "Grid":{
+                                "position":[0,1],
+                                "rows": 1,
+                                "cols":[
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "minWidth": "100px",
+                                            "margin": "0 5px"
+                                        }
+                                    },
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "minWidth": "100px",
+                                            "margin": "0 5px"
+                                        }
+                                    },
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "minWidth": "100px",
+                                            "margin": "0 5px",
+                                            "display": "flex",
+                                            "alignItems": "center"
+                                        }
+                                    }
+                                ],
+                                "children":[
+                                    {
+                                        "Selector":{
+                                            "position":[0,0],
+                                            "checkValues":["USER.PRI_OWNER"],
+                                            "showValues":["true"],
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em",
+                                                            "marginRight": "5px"
+                                                        },
+                                                        "children":"BE.PRI_OFFER_OWNER_PRICE_INC_GST"
+                                                    }
+                                                },
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em"
+                                                        },
+                                                        "children":"(incl GST)"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "Selector":{
+                                            "position":[0,0],
+                                            "checkValues":["USER.PRI_DRIVER"],
+                                            "showValues":["true"],
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em",
+                                                            "marginRight": "5px"
+                                                        },
+                                                        "children":"BE.PRI_OFFER_DRIVER_PRICE_EXC_GST"
+                                                    }
+                                                },
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em"
+                                                        },
+                                                        "children":"(ex GST)"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "span":{
+                                            "position":[0,1],
+                                            "children": [
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em",
+                                                            "marginRight": "5px"
+                                                        },
+                                                        "children":"BE.links.CREATOR.PRI_FIRSTNAME"
+                                                    }
+                                                },
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em"
+                                                        },
+                                                        "children":"BE.links.CREATOR.PRI_LASTNAME"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "RatingDisplay":{
+                                            "position":[0,2],
+                                            "fontSize" : "18px",
+                                            "value":"BE.links.CREATOR.PRI_RATING"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_OWNER"],
+                    "showValues":["true"],
+                    "position":[0,1],
+                    "children":[
+                        {
+                            "Grid":{
+                                "rows":[
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "margin": "0px -5px"
+                                        }
+                                    }
+                                ],
+                                "cols":[
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "display": "flex",
+                                            "alignItems": "center",
+                                            "minWidth": "100px",
+                                            "margin": "2.5px 5px"
+                                        }
+                                    },
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "display": "flex",
+                                            "alignItems": "center",
+                                            "minWidth": "100px",
+                                            "margin": "2.5px 5px"
+                                        }
+                                    },
+                                    {
+                                        "style":{
+                                            "flexGrow": 1,
+                                            "display": "flex",
+                                            "alignItems": "center",
+                                            "minWidth": "100px",
+                                            "margin": "2.5px 5px"
+                                        }
+                                    }
+                                ],
+                                "children":[
+                                    {
+                                        "Selector":{
+                                            "checkValues":["BE.PRI_NEXT_ACTION"],
+                                            "showValues":["OWNER"],
+                                            "position":[0,0],
+                                            "children":[
+                                                {
+                                                    "GennyButton":{
+                                                        "buttonCode":"BTN_CONFIRM_OFFER",
+                                                        "value":{
+                                                            "itemCode":"BE.code",
+                                                            "hint":"ROOT"
+                                                        },
+                                                        "style":{
+                                                            "height":"30px"
+                                                        },
+                                                        "type":"confirm",
+                                                        "children":[
+                                                            {
+                                                                "span":{
+                                                                    "style":{
+                                                                        "fontSize":"0.75em",
+                                                                        "color":"white"
+                                                                    },
+                                                                    "children":"ACCEPT"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "Selector":{
+                                            "checkValues":["BE.PRI_NEXT_ACTION"],
+                                            "showValues":["OWNER"],
+                                            "position":[0,1],
+                                            "children":[
+                                                {
+                                                    "GennyButton":{
+                                                        "buttonCode":"BTN_COUNTER_OFFER",
+                                                        "value":{
+                                                            "itemCode":"BE.code",
+                                                            "hint":"ROOT"
+                                                        },
+                                                        "style":{
+                                                            "height":"30px"
+                                                        },
+                                                        "buttonStyle":{
+                                                            "backgroundColor":"#000"
+                                                        },
+                                                        "children":[
+                                                            {
+                                                                "span":{
+                                                                    "style":{
+                                                                        "fontSize":"0.75em",
+                                                                        "color":"white"
+                                                                    },
+                                                                    "children":"COUNTER QUOTE"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "GennyButton":{
+                                            "position":[0,2],
+                                            "buttonCode":"BTN_CREATE_CONVERSATION",
+                                            "value":{
+                                                "itemCode":"BE.code",
+                                                "hint":"ROOT"
+                                            },
+                                            "type":"confirm",
+                                            "style":{
+                                                "height":"30px"
+                                            },
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.75em",
+                                                            "color":"white"
+                                                        },
+                                                        "children":"MESSAGE"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_DRIVER"],
+                    "showValues":["true"],
+                    "position":[0,1],
+                    "children":[
+                        {
+                            "Selector":{
+                                "checkValues":["BE.PRI_NEXT_ACTION"],
+                                "showValues":["QUOTER"],
+                                "children":[
+                                    {
+                                        "Grid":{
+                                            "rows":[
+                                                {
+                                                    "style":{
+                                                        "flexGrow": 1,
+                                                        "margin": "0 -5px"
+                                                    }
+                                                }
+                                            ],
+                                            "cols":[
+                                                {
+                                                    "style":{
+                                                        "flexGrow": 1,
+                                                        "minWidth": "100px",
+                                                        "margin": "2.5px 5px"
+                                                    }
+                                                },
+                                                {
+                                                    "style":{
+                                                        "flexGrow": 1,
+                                                        "minWidth": "100px",
+                                                        "margin": "2.5px 5px"
+                                                    }
+                                                }
+                                            ],
+                                            "children":[
+                                                {
+                                                    "GennyButton":{
+                                                        "position":[0,0],
+                                                        "buttonCode":"BTN_CONFIRM_OFFER",
+                                                        "value":{
+                                                            "itemCode":"BE.code",
+                                                            "hint":"ROOT"
+                                                        },
+                                                        "style":{
+                                                            "height":"30px"
+                                                        },
+                                                        "type":"confirm",
+                                                        "children":[
+                                                            {
+                                                                "span":{
+                                                                    "style":{
+                                                                        "fontSize":"0.75em",
+                                                                        "color":"white"
+                                                                    },
+                                                                    "children":"ACCEPT"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "GennyButton":{
+                                                        "position":[0,1],
+                                                        "buttonCode":"BTN_COUNTER_OFFER",
+                                                        "value":{
+                                                            "itemCode":"BE.code",
+                                                            "hint":"ROOT"
+                                                        },
+                                                        "style":{
+                                                            "height":"30px"
+                                                        },
+                                                        "buttonStyle":{
+                                                            "backgroundColor":"#000"
+                                                        },
+                                                        "children":[
+                                                            {
+                                                                "span":{
+                                                                    "style":{
+                                                                        "fontSize":"0.75em",
+                                                                        "color":"white"
+                                                                    },
+                                                                    "children":"COUNTER QUOTE"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

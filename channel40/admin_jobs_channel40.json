@@ -1,0 +1,112 @@
+{
+    "Grid": {
+        "rows": [1, 5],
+        "cols": 1,
+        "children": [
+            {
+                "GennyTable":{
+                    "position": [1, 0],
+                    "root":"GRP_ADMIN_JOBS",
+                    "columns": [
+                        {
+                            "code": "PRI_IMAGE_URL",
+                            "width": 60
+                        },
+                        {
+                            "code": "PRI_TITLE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DESCRIPTION",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_LOAD_TYPE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_LOAD_LENGTH_MM",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_LOAD_WIDTH_MM",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_LOAD_HEIGHT_MM",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_LOAD_WEIGHT_KG",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_PICKUP_ADDRESS_ADDRESS1",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_PICKUP_ADDRESS_POSTCODE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_PICKUP_ADDRESS_SUBURB",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_PICKUP_ADDRESS_STATE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_PICKUP_ADDRESS_COUNTRY",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DROPOFF_ADDRESS_ADDRESS1",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DROPOFF_ADDRESS_POSTCODE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DROPOFF_ADDRESS_SUBURB",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DROPOFF_ADDRESS_STATE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DROPOFF_ADDRESS_COUNTRY",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_TOTAL_DISTANCE_M",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_PICKUP_DATETIME",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DROPOFF_DATETIME",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_OWNER_PRICE_INC_GST",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_DRIVER_PRICE_EXC_GST",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_FEE_INC_GST",
+                            "width": 150
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

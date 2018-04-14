@@ -1,0 +1,20 @@
+{
+    "div": {
+       "style": {
+           "width": "100%",
+           "height": "100%"  
+        },
+        "children": [
+            {
+                "GennyForm": {
+                    "root": "QUE_LOAD_DETAILS_GRP"
+                }
+            },
+             {
+                "GennyForm": {
+                    "root": "QUE_JOB_DETAILS_GRP"
+                }
+            }
+        ]
+    }
+}

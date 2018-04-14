@@ -1,0 +1,83 @@
+{
+  "Grid": {
+    "rows": 1,
+    "cols": [2, 1],
+    "children": [
+      {
+        "Grid": {
+          "position": [0, 0],
+          "style": {
+            "color": "rgb(72,84,98)"
+          },
+          "rows": [0.1, 1],
+          "cols": [
+            {
+              "style": {
+                "flexGrow": 1,
+                "marginLeft": "10%"
+              }
+            }
+          ],
+          "children": [
+            {
+                "SublayoutLoader" : {
+                    "position":[0, 0],
+                    "layoutCode": "internship-details-title",
+                    "aliases": {
+                        "BE": "BE.code",
+                        "GROUP": "ROOT"
+                  }
+               }
+            },
+            {
+                "SublayoutLoader" : {
+                    "position":[0, 0],
+                    "layoutCode": "internship-details-features",
+                    "aliases": {
+                        "BE": "BE.code",
+                        "GROUP": "ROOT"
+                  }
+               }
+            },
+            {
+              "SublayoutLoader": {
+                "position":[1, 0],
+                "layoutCode": "internship-details-required-skills",
+                "aliases": {
+                  "BE": "BE.code",
+                  "GROUP": "ROOT"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Grid": {
+          "position":[0, 1],
+          "cols": 1,
+          "rows": 2,
+          "style": {
+            "height": "50%"
+          },
+          "children": [
+            {
+              "SublayoutLoader": {
+                  "style": {
+                    "float": "right",
+                    "marginRight": "50px"
+                  },
+                  "position": [1, 0],
+                  "layoutCode": "internship-details-button-actions",
+                  "aliases": {
+                     "BE": "BE.code",
+                     "GROUP": "ROOT"
+                  }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

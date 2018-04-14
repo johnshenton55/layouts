@@ -1,0 +1,40 @@
+{
+    "div": {
+       "style": {
+           "width": "100%",
+           "height": "100%"  
+        },
+        "children": [
+            {
+                "GennyForm": {
+                     "style": {
+                       "overflowY": "visible"
+                    },
+                    "root": "QUE_NEW_USER_PROFILE_GRP"
+                }
+            },
+             {
+                "GennyForm": {
+                     "style": {
+                       "overflowY": "visible"
+                    },
+                    "root": "QUE_NEW_USER_COMPANY_GRP"
+                }
+            },
+             {
+                "GennyForm": {
+                    "root": "QUE_NEW_USER_COMPANY_READONLY_GRP"
+                }
+            },
+            {
+                "GennyForm": {
+                     "style": {
+                       "overflowY": "visible",
+                        "paddingBottom": "50px"
+                    },
+                    "root": "QUE_USER_COMPANY_GRP"
+                }
+            }
+        ]
+    }
+}

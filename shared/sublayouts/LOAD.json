@@ -1,0 +1,166 @@
+{
+    "Grid": {
+        "rows": 1,
+        "cols": [
+            {
+                "style": {
+                    "flex": "0 0 50px",
+                    "alignItems": "center"
+                }
+            },
+            1
+        ],
+        "className": "bucket-card",
+        "children": [
+            {
+                "ImageView": {
+                    "position": [0,0],
+                    "style": {
+                        "width": "100%",
+                        "paddingRight": "5px"
+                    },
+                    "src": "BE.PRI_IMAGE_URL"
+                }
+            },
+            {
+                "Grid": {
+                    "position": [0,1],
+                    "rows": 3,
+                    "cols": 1,
+                    "style": {
+                        "maxHeight": "50%",
+                        "display": "block"
+                    },
+                    "children": [
+                        {
+                            "span": {
+                                "position": [0,0],
+                                "style": {
+                                    "fontSize": "0.75em"
+                                },
+                                "children": "BE.PRI_LOAD_TYPE"
+                            }
+                        },
+                        {
+                            "Grid": {
+                                "cols": 2,
+                                "rows": 2,
+                                "position": [2,0],
+                                "children": [
+                                    {  
+                                        "span":{
+                                            "position": [0,0],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"L: "
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [0,0],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"BE.PRI_LOAD_LENGTH_MM"
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [0,0],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":" mm"
+                                        }
+                                    },
+                                    {  
+                                        "span":{  
+                                            "position": [0,1],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"W: "
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [0,1],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"BE.PRI_LOAD_WIDTH_MM"
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [0,1],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":" mm"
+                                        }
+                                    },
+                                    {  
+                                        "span":{  
+                                            "position": [1,0],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"H: "
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [1,0],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"BE.PRI_LOAD_HEIGHT_MM"
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [1,0],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":" mm"
+                                        }
+                                    },
+                                    {  
+                                        "span":{  
+                                            "position": [1,1],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"W: "
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [1,1],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":"BE.PRI_LOAD_WIDTH_MM"
+                                        }
+                                    },
+                                    {
+                                        "span":{  
+                                            "position": [1,1],
+                                            "style": {
+                                                "fontSize": "0.8em"
+                                            },
+                                            "children":" kg"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

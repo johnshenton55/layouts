@@ -1,0 +1,76 @@
+{
+    "Grid": {
+        "rows": [1, 5],
+        "cols": 1,
+        "children": [
+            {
+                "GennyForm": {
+                    "position": [0, 0],
+                    "isHorizontal": true,
+                    "root": "QUE_USERS_SEARCH"
+                }
+            },
+            {
+                "GennyTable":{
+                    "position": [1, 0],
+                    "root":"GRP_ADMIN_USERS",
+                    "columns": [
+                        {
+                            "code": "PRI_USERNAME",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_FIRSTNAME",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_LASTNAME",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_MOBILE",
+                            "width": 150
+                        },
+                        {
+                            "code": "PRI_EMAIL",
+                            "width": 300
+                        },
+                        {
+                            "code": "PRI_IMAGE_URL",
+                            "width": 60
+                        },
+                        {
+                            "code": "PRI_RATING",
+                            "width": 100
+                        },
+                        {
+                            "code": "PRI_ADDRESS_FULL",
+                            "width": 400
+                        }
+                    ],
+                    "buttonActions":[
+                        {
+                            "GennyButton":{
+                                "className":"table-buttons",
+                                "buttonCode":"RESET_USER_PASSWORD",
+                                "value":{
+                                    "userCode":"BE.PRI_KEYCLOAK_UUID"
+                                },
+                                "style":{
+                                    "height":"30px"
+                                },
+                                "children":[
+                                    {
+                                        "span":{
+                                            "children":"Reset Password"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

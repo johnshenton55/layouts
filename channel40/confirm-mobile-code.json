@@ -1,0 +1,48 @@
+{
+    "div": {
+       "style": {
+           "width": "100%",
+           "height": "100%",
+           "display": "flex",
+           "alignItems": "center",
+           "justifyContent": "center"  
+        },
+        "children": [
+            {
+                "div": {
+                    "style" : {
+                        "width": "400px",
+                        "padding": "20px",
+                        "display": "flex",
+                        "alignItems": "center",
+                        "flexDirection": "column"
+                    },
+                    "children": [
+                        {
+                            "h1" : {
+                                "style" : {
+                                    "margin": " 0 0 10px",
+                                    "textAlign": "center"
+                                },
+                                "children" : "Mobile Verification"
+                            }
+                        },{
+                            "span" : {
+                                "style" : {
+                                    "marginBottom": "10px",
+                                    "textAlign": "center"
+                                },
+                                "children" : "Please enter the 4 digit code that was sent to your phone to verify your mobile number."
+                            }
+                        },
+                        {
+                            "GennyPasscode" : {
+                                "autofocus": true
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

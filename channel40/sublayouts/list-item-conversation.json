@@ -1,0 +1,75 @@
+{
+    "Grid": {
+        "className": "list-item-conversation",
+        "rows": 1,
+        "cols": [ 
+            "50px",
+            1, 
+            {
+                "style": {
+                     "flex": 0.1,
+                     "display": "flex"
+                }
+            }
+        ],
+        "style": {
+            "padding": "10px",
+            "textAlign": "left",
+            "color": "black",
+            "height": "100%",
+            "width": "100%"
+        },
+        "children": [
+            {
+                "ProfileImageView" : {
+                    "position": [0, 0],
+                    "isOnline":"CONTACT.PRI_ONLINE",
+                    "style": {
+                        "margin": "5px 10px 5px 0"
+                    },
+                    "src": "CONTACT.PRI_IMAGE_URL"
+                }
+            },
+            {
+                "Grid": {
+                    "position": [0, 1],
+                    "rows": 3,
+                    "cols": 1,
+                    "children": [
+                        {
+                            "span": {
+                                "position": [0, 0],
+                                "children": "CONTACT.PRI_FIRSTNAME"
+                            }
+                        },
+                        {
+                            "div": {
+                                "position": [2, 0],
+                                "style": {
+                                    "fontSize": "0.8em"
+                                },
+                                "children": "BE.PRI_TITLE"
+                            }
+                        },
+                        {
+                            "DateLabel": {
+                                "format": "DD/MM/YYYY",
+                                "style": {
+                                    "fontSize": "0.8em"
+                                },
+                                "position": [1, 0],
+                                "children": "BE.PRI_DATE_LAST_MESSAGE"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "IconSmall": {
+                    "position": [0, 2],
+                    "name": "arrow_right"
+                }
+            }
+        ]
+    }
+}

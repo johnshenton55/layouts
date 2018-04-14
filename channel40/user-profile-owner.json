@@ -1,0 +1,69 @@
+{
+    "div": {
+       "style": {
+           "width": "100%",
+           "height": "100%"  
+        },
+        "children": [
+            {
+                "TabContainer": {
+                    "isVertical": true,
+                    "contentStyle": {
+                        "background": "#fff"
+                    },
+                    "views": [
+                        {
+                            "title" : "PROFILE INFO",
+                            "icon": "person",
+                            "layout" : {
+                                "layout" : [
+                                    {
+                                        "GennyForm": {
+                                            "style": {
+                                               "overflowY": "visible"
+                                            },
+                                            "root": "QUE_USER_PROFILE_GRP"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title" : "COMPANY INFO",
+                            "icon": "work",
+                            "layout" : {
+                                "layout" : [
+                                    {
+                                        "GennyForm": {
+                                            "style": {
+                                               "overflowY": "visible"
+                                            },
+                                            "root": "QUE_USER_COMPANY_GRP"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "title" : "BANK DETAILS",
+                            "icon": "credit_card",
+                            "layout" : {
+                                "layout" : [
+                                    {
+                                        "GennyForm": {
+                                            "style": {
+                                               "overflowY": "visible"
+                                            },
+                                            "isAccountsManagement" : true,
+                                            "root": "QUE_PAYMENT_METHOD_GRP"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

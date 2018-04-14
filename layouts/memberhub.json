@@ -1,0 +1,237 @@
+{
+  "layout": [
+    {
+      "AppHolder": {
+        "cols": 1,
+        "rows": 1,
+        "children": [
+          {
+            "Grid": {
+              "cols": 1,
+              "rows": [
+                { "style": 
+                  {
+                    "flex": "0 0 90px",
+                    "position": "relative"
+                  }
+                },
+                "auto",
+                "30px"
+              ],
+              "position": [0,0],
+              "children": [
+                {
+                  "GennyHeader": {
+                    "position": [0,0],
+                    "hideSubheader": true,
+                    "style": {
+                      "backgroundColor": "PROJECT.PRI_COLOR",
+                      "color": "red !important",
+                      "boxShadow": "0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)",
+                      "zIndex": "100"
+                    },
+                    "projectTitle" : "PROJECT.PRI_NAME",
+                    "projectGreeting" : "PROJECT.PRI_GREETING",
+                    "userName" : "USER.PRI_FIRSTNAME",
+                    "userImage" : "USER.PRI_IMAGE_URL"
+                  }
+                },
+                {
+                  "AppContent": {
+                    "position": [1,0],
+                    "style": {
+                      "overflow": "scroll"
+                    },
+                    "children" : [
+                      {
+                        "div": {
+                          "children": [
+                            {
+                              "div": {
+                                "style": {
+                                  "display": "flex",
+                                  "flexFlow": "row nowrap",
+                                  "width": "100%",
+                                  "margin": "0"
+                                },
+                                "children": [{
+                                    "div": {
+                                      "style": {
+                                        "backgroundColor": "#f6f8f8",
+                                        "color": "#212121",
+                                        "padding": "10px",
+                                        "fontFamily": "Helvetica",
+                                        "fontWeight": "400",
+                                        "maxWidth": "25%"
+                                      },
+                                      "children": [
+                                        {
+                                          "h1": {
+                                            "children": "QUESTIONS",
+                                            "style": {
+                                              "marginBottom": "10px",
+                                              "marginTop": "10px",
+                                              "textAlign": "center"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "GennyForm": {
+                                            "itemsPerPage": 10,
+                                            "showProgress": true,
+                                            "root": "QUE_MEMBERHUB_GRP",
+                                            "style": {
+                                              "color": "PROJECT.PRIMARY_COLOR",
+                                              "backgroundColor" : "none",
+                                              "boxShadow": "-10px -10px 30px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.05)"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                    
+                                  {
+                                    "div": {
+                                      "style": {
+                                        "backgroundColor": "#f6f8f8",
+                                        "color": "#212121",
+                                        "padding": "10px",
+                                        "fontFamily": "Helvetica",
+                                        "fontWeight": "400",
+                                        "flexGrow": "1",
+                                        "maxWidth": "35%"
+                                      },
+                                      "children": [
+                                        {
+                                          "h1": {
+                                            "children": "ATTRIBUTES",
+                                            "style": {
+                                              "marginBottom": "10px",
+                                              "marginTop": "10px",
+                                              "textAlign": "center"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "GennyTable": {
+                                            "root": "USER.code",
+                                            "showBaseEntity": true,
+                                            "itemsPerPage": 25,
+                                            "bodyHeight": "calc(100vh - 300px)",
+                                            "style": {                          
+                                              
+                                              "boxShadow": "-10px -10px 30px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.05)",
+                                              "padding" : "0px",
+                                              "margin" : "0px"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "div": {
+                                      "style": {
+                                        "backgroundColor": "#f6f8f8",
+                                        "color": "#212121",
+                                        "padding": "10px",
+                                        "fontFamily": "Helvetica",
+                                        "fontWeight": "400",
+                                        "flexGrow": "1",
+                                        "maxWidth": "40%"
+                                      },
+                                      "children": [
+                                        {
+                                          "h1": {
+                                            "children": "FRIENDS",
+                                            "style": {
+                                              "marginBottom": "10px",
+                                              "marginTop": "10px",
+                                              "textAlign": "center"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "GennyTable": {
+                                            "root": "USER.code",
+                                            "itemsPerPage": 18,
+                                            "linkCode":"LNK_FRIEND",
+                                            "style": {
+                                              "maxHeight": "500px",
+                                              "boxShadow": "-10px -10px 30px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.05)",
+                                              "padding" : "0px",
+                                              "margin" : "0px",
+                                              "marginBottom" : "50px"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "h1": {
+                                            "children": "SCORE BOARD",
+                                            "style": {
+                                              "marginBottom": "10px",
+                                              "marginTop": "10px",
+                                              "textAlign": "center"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "GennyTable": {
+                                            "root": "PRD_HOME_LOAN",
+                                            "showBaseEntity": true,
+                                            "itemsPerPage": 1,
+                                            "style": {
+                                              "boxShadow": "-10px -10px 30px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.05)",
+                                              "padding" : "0px",
+                                              "margin" : "0px",
+                                              "marginBottom" : "30px"
+
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "GennyTable": {
+                                            "root": "PRD_HOLIDAY",
+                                            "showBaseEntity": true,
+                                            "itemsPerPage": 1,
+                                            "style": {
+                                              "boxShadow": "-10px -10px 30px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.05)",
+                                              "padding" : "0px",
+                                              "margin" : "0px"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "Footer": {
+                    "position": [2,0],
+                    "style": {
+                      "backgroundColor": "PROJECT.PRI_COLOR",
+                      "color": "white"
+                    },
+                    "version" : "PROJECT.PRI_VERSION",
+                    "poweredBy" : {
+                      "caption" : "PROJECT.PRI_POWERED_BY"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

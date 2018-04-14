@@ -1,0 +1,39 @@
+
+{
+  "Grid": {
+    "rows": [0.1, 0.1, 1, 0.1, 1],
+    "cols": "1",
+    "children": [
+      {
+        "h4": {
+          "position": [0, 0],
+          "children": "REQUIRED SKILLS"
+        }
+      },
+      {
+        "h4": {
+          "position": [1, 0],
+          "children": "INTERNSHIP DESCRIPTION"
+        }
+      },
+      {
+        "div": {
+          "position": [2, 0],
+          "children": "BE.PRI_DESCRIPTION"
+        }
+      },
+       {
+        "h4": {
+          "position": [3, 0],
+          "children": "OTHER REQUIREMENTS"
+        }
+      },
+      {
+        "div": {
+          "position": [4, 0],
+          "children": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      }
+    ]
+  }
+}

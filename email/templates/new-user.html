@@ -1,0 +1,79 @@
+<td align="center" valign="top">
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 25px; mso-line-height-rule:exactly; line-height:27px; color: #292929;">
+                Your Channel 40 Registration.
+            </td>
+        </tr>
+        <tr><td height="24" style="font-size: 0; line-height: 24px;">&nbsp;</td></tr>
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 16px; mso-line-height-rule:exactly; line-height:20px; color: #363636;">
+                Hello [QUOTER.PRI_FIRSTNAME],
+            </td>
+        </tr>
+        <tr><td height="15" style="font-size: 0; line-height: 15px;">&nbsp;</td></tr>
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; mso-line-height-rule:exactly; line-height:20px; color: #252525;">
+                You are successfully registered with Channel 40. You are just one step away from logging in with your newly created account details.
+            </td>
+        </tr>
+        <tr><td height="15" style="font-size: 0; line-height: 15px;">&nbsp;</td></tr>
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; mso-line-height-rule:exactly; line-height:20px; color: #252525;">
+                Click the below link to activate your email:
+            </td>
+        </tr>
+        <tr><td height="23" style="font-size: 0; line-height: 23px;">&nbsp;</td></tr>
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;">
+                <a href="{{ $webAppHost . '/verify-token/' . $confirmationCode }}" target="_blank" style="text-decoration: none; color: #363636;">
+                    <img src="{{ url('images/btn_01.png') }}" alt="VERIFY YOUR EMAIL" width="201" height="54" border="0" style="display: block; outline: none;">
+                </a>
+            </td>
+        </tr>
+        <tr><td height="23" style="font-size: 0; line-height: 23px;">&nbsp;</td></tr>
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; mso-line-height-rule:exactly; line-height:20px; color: #252525;">
+                If you have signed up through the app, once you complete the above verification your login details will be activated straight away so you can log in via the app.
+            </td>
+        </tr>
+        <tr><td height="30" style="font-size: 0; line-height: 30px;">&nbsp;</td></tr>
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; mso-line-height-rule:exactly; line-height:20px; color: #252525;">
+                Regards,<br/>
+                <span style="font-weight: bold; color: #363636;">The Channel 40 Team</span>
+            </td>
+        </tr>
+        <tr><td height="40" style="font-size: 0; line-height: 40px;" class="vspace30">&nbsp;</td></tr>
+    </table>
+</td>
+<td width="80" class="space">&nbsp;</td>
+<td align="center" valign="top">
+    <table width="97%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif;" >
+                <img src="{{ url('images/icon.png') }}" alt="RESET PASSWORD" width="25" height="25" border="0" style="outline: none;">
+            </td>
+            <td width="12">&nbsp;</td>
+            <td align="left" valign="top" >
+                <table width="100%" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;">
+                    <tr>
+                        <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; mso-line-height-rule:exactly; line-height:20px; color: #747474;">
+                            <strong>Having trouble verifying your account?</strong><br/>
+                            Paste the below link into your browser to complete the registration.
+                        </td>
+                    </tr>
+                    <tr><td height="5" style="font-size: 0; line-height: 5px;">&nbsp;</td></tr>
+                    <tr>
+                        <td align="left" valign="top" style="font-family: Helvetica, Arial, sans-serif; font-size: 14px; mso-line-height-rule:exactly; line-height:20px; color: #747474;  word-break: break-all;">
+                            <a href="{{ $webAppHost . '/verify-token/' . $confirmationCode }}" target="_blank" style="text-decoration: underline; color: #747474; word-break: break-all;">
+                                {{ $webAppHost . '/verify-token/' . $confirmationCode }}
+                            </a>
+                        </td>
+                    </tr>
+                    <tr><td height="32" style="font-size: 0; line-height: 32px;">&nbsp;</td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</td>

@@ -1,0 +1,22 @@
+{
+  "div": {
+    "style": {
+      "display": "flex",
+      "flexDirection": "column",
+      "fontSize": "18px"
+    },
+    "children": [
+      {
+        "ImageView": {
+          "src": "BE.PRI_IMAGE_URL"
+        }
+      },
+      {
+        "p":{
+          "children": "Hello there this is a job item title"
+        }
+      }
+    ]
+
+  }
+}

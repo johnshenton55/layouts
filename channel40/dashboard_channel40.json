@@ -1,0 +1,220 @@
+{
+    "div":{
+        "style":{
+            "height":"100%"
+        },
+        "children":[
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_OWNER"],
+                    "showValues": ["true", true],
+                    "children":[
+                        {
+                            "Selector": {
+                                "checkValues": ["USER.PRI_IS_ADMIN"],
+                                "showIfNull": true,
+                                "children": [
+                                    {
+                                        "Grid":{
+                                            "rows":[
+                                                {
+                                                    "style":{
+                                                        "height":"60px",
+                                                        "flexGrow":0,
+                                                        "flexShrink":0
+                                                    }
+                                                },
+                                                {
+                                                    "style":{
+                                                        "flexGrow":1
+                                                    }
+                                                }
+                                            ],
+                                            "cols":[
+                                                {
+                                                    "style":{
+                                                        "flexGrow":1,
+                                                        "width":"100%"
+                                                    }
+                                                }
+                                            ],
+                                            "children":[
+                                                {
+                                                    "div":{
+                                                        "position":[
+                                                            0,
+                                                            0
+                                                        ],
+                                                        "style":{
+                                                            "backgroundColor":"#555",
+                                                            "width":"100%",
+                                                            "height":"60px",
+                                                            "display":"flex",
+                                                            "alignItems":"center",
+                                                            "padding":"0 10px",
+                                                            "justifyContent":"flex-start"
+                                                        },
+                                                        "children":[
+                                                            {
+                                                                "Device":{
+                                                                    "isMobile":true,
+                                                                    "children":[
+                                                                        {
+                                                                            "GennyButton":{
+                                                                                "buttonCode":"GRP_NEW_ITEMS",
+                                                                                "value":"ADD_NEW_LOAD",
+                                                                                "style":{
+                                                                                    "width":"100%",
+                                                                                    "marginTop":"10px",
+                                                                                    "fontSize":"16px"
+                                                                                },
+                                                                                "buttonStyle":{
+                                                                                    "background":"#5cb85c",
+                                                                                    "height":"40px"
+                                                                                },
+                                                                                "children":"ADD LOAD"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "Device":{
+                                                                    "isDesktop":true,
+                                                                    "isTablet":true,
+                                                                    "children":[
+                                                                        {
+                                                                            "GennyButton":{
+                                                                                "buttonCode":"GRP_NEW_ITEMS",
+                                                                                "value":"ADD_NEW_LOAD",
+                                                                                "style":{
+                                                                                    "width":"200px",
+                                                                                    "marginTop":"10px",
+                                                                                    "fontSize":"16px"
+                                                                                },
+                                                                                "buttonStyle":{
+                                                                                    "background":"#5cb85c",
+                                                                                    "height":"40px"
+                                                                                },
+                                                                                "children":"ADD LOAD"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "TabContainer": {
+                                                        "position":[1,0],
+                                                        "views": [
+                                                            {
+                                                                "title" : "Bucket View",
+                                                                "icon": "dashboard",
+                                                                "layout" : {
+                                                                    "layout" : [
+                                                                        {
+                                                                            "GennyBucketView":{
+                                                                                "root":"GRP_DASHBOARD"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "title" : "Map View",
+                                                                "icon": "public",
+                                                                "layout" : {
+                                                                    "layout" : [
+                                                                        {
+                                                                            "GennyMap":{
+                                                                                "hideRoutes": true,
+                                                                                "lat": "USER.PRI_ADDRESS_LATITUDE",
+                                                                                "lng": "USER.PRI_ADDRESS_LONGITUDE",
+                                                                                "root":"GRP_DASHBOARD"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Selector":{
+                    "checkValues":["USER.PRI_DRIVER", "USER.PRI_IS_ADMIN"],
+                    "showValues": ["true"],
+                    "children":[
+                        {
+                            "Grid":{
+                                "rows":[
+                                    {
+                                        "style":{
+                                            "flexGrow":1
+                                        }
+                                    }
+                                ],
+                                "cols":[
+                                    {
+                                        "style":{
+                                            "flexGrow":1,
+                                            "width":"100%"
+                                        }
+                                    }
+                                ],
+                                "children":[
+                                    {
+                                        "TabContainer": {
+                                            "position":[0,0],
+                                            "views": [
+                                                {
+                                                    "title" : "Bucket View",
+                                                    "icon": "dashboard",
+                                                    "layout" : {
+                                                        "layout" : [
+                                                            {
+                                                                "GennyBucketView":{
+                                                                    "root":"GRP_DASHBOARD"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "title" : "Map View",
+                                                    "icon": "public",
+                                                    "layout" : {
+                                                        "layout" : [
+                                                            {
+                                                                "GennyMap":{
+                                                                    "hideRoutes": true,
+                                                                    "lat": "USER.PRI_ADDRESS_LATITUDE",
+                                                                    "lng": "USER.PRI_ADDRESS_LONGITUDE",
+                                                                    "root":"GRP_DASHBOARD"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

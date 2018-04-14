@@ -1,0 +1,198 @@
+{
+    "div": {
+        "children": [
+            {
+                "Selector":{
+                    "checkValues": ["ROOT"],
+                    "showValues": ["GRP_NEW_ITEMS", "GRP_DRAFTS"],
+                    "children": [
+                        {
+                            "Selector": {
+                                "checkValues": ["USER.PRI_OWNER"],
+                                "showValues": ["true"],
+                                "children": [
+                                    {
+                                        "GennyButton": {
+                                            "buttonCode":"BE.code",
+                                            "style":{
+                                                "marginBottom": "5px",
+                                                "height": "30px",
+                                                "fontSize":"0.9em",
+                                                "width": "100%"
+                                            },
+                                            "buttonStyle":{
+                                                "height": "30px",
+                                                "padding":"0 5px"
+                                            },
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.9em"
+                                                        },
+                                                        "children":"Edit Load"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                         {
+                            "Selector": {
+                                "checkValues": ["USER.PRI_OWNER", "USER.PRI_IS_ADMIN"],
+                                "showValues": ["true"],
+                                "children": [
+                                    {
+                                        "GennyButton": {
+                                            "buttonCode":"BTN_DELETE_BEG",
+                                            "value": "BE.code",
+                                            "confirmation": "Are you sure you want to delete this job?",
+                                            "style":{
+                                                "marginBottom": "5px",
+                                                "height": "30px",
+                                                "fontSize":"0.9em",
+                                                "width": "100%"
+                                            },
+                                            "buttonStyle":{
+                                                "height": "30px",
+                                                "padding":"0 5px",
+                                                "background": "red"
+                                            },
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.9em"
+                                                        },
+                                                        "children":"Delete Load"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Selector": {
+                                "checkValues": ["USER.PRI_DRIVER"],
+                                "showValues": ["true" ],
+                                "children": [
+                                    {
+                                        "Selector":{
+                                            "checkValues": ["BE.PRI_OWNER_PRICE_INC_GST"],
+                                            "showIfNotNull": true,
+                                            "children":[
+                                                {
+                                                    "GennyButton":{
+                                                        "buttonCode":"BTN_ACCEPT_JOB",
+                                                        "value":{
+                                                            "itemCode":"BE.code"
+                                                        },
+                                                        "type":"confirm",
+                                                        "style":{
+                                                            "marginBottom":"5px",
+                                                            "height":"30px",
+                                                            "fontSize":"0.9em",
+                                                            "width": "100%"
+                                                        },
+                                                        "buttonStyle":{
+                                                            "height":"30px",
+                                                            "padding":"0 5px"
+                                                        },
+                                                        "children":[
+                                                            {
+                                                                "span":{
+                                                                    "style":{
+                                                                        "fontSize":"0.9em"
+                                                                    },
+                                                                    "children":"Accept"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "GennyButton":{
+                                            "buttonCode":"BTN_MAKE_OFFER",
+                                            "value":{
+                                                "itemCode":"BE.code"
+                                            },
+                                            "style":{
+                                                "marginBottom":"5px",
+                                                "height":"30px",
+                                                "fontSize":"0.9em",
+                                                "width": "100%"
+                                            },
+                                            "buttonStyle":{
+                                                "height":"30px",
+                                                "padding":"0 5px"
+                                            },
+                                            "type": "confirm",
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.9em"
+                                                        },
+                                                        "children":"Submit Quote"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Selector": {
+                    "checkValues": ["USER.PRI_DRIVER"],
+                    "showValues": ["true"],
+                    "children": [
+                        {
+                            "Selector": {
+                                "checkValues": ["ROOT"],
+                                "hideValues": ["GRP_NEW_ITEMS"],
+                                "children": [
+                                    {
+                                        "MapDirectionsButton":{
+                                            "addressPickup":"BE.PRI_PICKUP_ADDRESS_FULL",
+                                            "addressDropoff":"BE.PRI_DROPOFF_ADDRESS_FULL",
+                                            "style":{
+                                                "height":"30px",
+                                                "fontSize":"0.9em",
+                                                "width": "100%"
+                                            },
+                                            "buttonStyle":{
+                                                "height":"30px",
+                                                "padding":"0 5px"
+                                            },
+                                            "children":[
+                                                {
+                                                    "span":{
+                                                        "style":{
+                                                            "fontSize":"0.9em"
+                                                        },
+                                                        "children":"Get Directions"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

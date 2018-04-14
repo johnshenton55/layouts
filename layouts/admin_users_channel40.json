@@ -1,0 +1,26 @@
+{
+    "GennyTable":{
+        "root":"GRP_ADMIN_USERS",
+        "buttonActions":[
+            {
+                "GennyButton":{
+                    "className":"table-buttons",
+                    "buttonCode":"RESET_USER_PASSWORD",
+                    "value":{
+                        "userCode":"BE.PRI_KEYCLOAK_UUID"
+                    },
+                    "style":{
+                        "height":"30px"
+                    },
+                    "children":[
+                        {
+                            "span":{
+                                "children":"Reset Password"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

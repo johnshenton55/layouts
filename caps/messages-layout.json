@@ -1,0 +1,6 @@
+{
+  "GennyMessaging": {
+    "root": "GRP_MESSAGES",
+    "messagesRoot": "CHT_CHAT1"
+  }
+}

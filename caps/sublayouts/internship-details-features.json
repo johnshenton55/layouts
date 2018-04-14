@@ -1,0 +1,172 @@
+{
+  "Grid": {
+    "rows": [
+      {
+        "style": {
+          "flexGrow": 1,
+          "margin": "10px"
+        }
+      }, 
+      {
+        "style": {
+          "flexGrow": 1,
+          "margin": "10px"
+        }
+      }
+    ],
+    "cols": 3,
+    "children": [
+      {
+        "div": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "height": "100%"
+          },
+          "position": [0, 0],
+          "children": [
+            {
+              "IconSmall": {
+                "name": "location_on",
+                "style": {
+                  "marginRight": "10px"
+                }
+              }
+            },
+            {
+              "GennyAddressLabel": {
+                "root": "BE.code",
+                "attributePrefix": "PRI_ADDRESS",
+                "hideStreetAddress": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "div": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "height": "100%"
+          },
+          "position": [0, 1],
+          "children": [
+            {
+              "IconSmall": {
+                "name": "location_on",
+                "style": {
+                  "marginRight": "10px"
+                }
+              }
+            },
+            {
+              "div": {
+                "children": "Industry"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "div": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "height": "100%"
+          },
+          "position": [0, 2],
+          "children": [
+            {
+              "IconSmall": {
+                "name": "attach_money",
+                "style": {
+                  "marginRight": "10px"
+                }
+              }
+            },
+            {
+              "Selector": {
+                "showValues": ["true"],
+                "checkValues": ["BE.PRI_IS_PAID"],
+                "children": [
+                  {
+                    "p": {
+                      "children": "Paid"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Selector": {
+                "checkValues": ["BE.PRI_IS_UNPAID"],
+                "showValues": ["true"],
+                "children": [
+                  {
+                    "p": {
+                      "children": "Unpaid"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "div": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "height": "100%"
+          },
+          "position": [1, 0],
+          "children": [
+            {
+              "IconSmall": {
+                "name": "date_range",
+                "style": {
+                  "marginRight": "10px"
+                }
+              }
+            },
+            {
+              "DateLabel": {
+                "date": "BE.PRI_START_DATE",
+                "format": "DD/MM/YYYY"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "div": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "height": "100%"
+          },
+          "position": [1, 2],
+          "children": [
+            {
+              "IconSmall": {
+                "name": "location_on",
+                "style": {
+                  "marginRight": "10px"
+                }
+              }
+            },
+            {
+              "GennyAddressLabel": {
+                "root": "BE.code",
+                "attributePrefix": "PRI_ADDRESS",
+                "hideStreetAddress": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
